@@ -1,0 +1,13 @@
+<h1>Movie Search Results for- <%=searchField%> are below.</h1>
+
+<ul>
+
+    <% searchResults.forEach(function(movie){ %>
+        <li>
+            <strong><%=movie.Title%></strong> -- <%=movie.Year%> -- <img src="<%=movie.Poster%>">
+        </li>
+    <% }) %>
+
+</ul>
+
+<a href="/">Search Again</a>
